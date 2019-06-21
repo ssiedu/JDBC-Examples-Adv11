@@ -8,7 +8,7 @@ public class ShowData {
         //We are fetching the details of emp earning
         //more than or equals 70000.
         Connection con=Data.connect();
-        String sql="SELECT * FROM emp where sal>=80000";
+        String sql="SELECT * FROM emp";
         Statement stmt=con.createStatement();
         ResultSet rs=stmt.executeQuery(sql);
         //cursor is on beforeFirst pos
